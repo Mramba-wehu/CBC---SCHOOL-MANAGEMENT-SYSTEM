@@ -17,7 +17,8 @@ import {
   TrendingUp,
   FileText,
   CheckCircle,
-  Shield
+  Shield,
+  Info
 } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import './Layout.css';
@@ -41,6 +42,7 @@ const Layout = () => {
     { name: 'Control Center', icon: Shield, path: '/admin', roles: ['SUPER_ADMIN', 'PRINCIPAL'] },
     { name: 'Timetable', icon: Calendar, path: '/timetable', roles: ['ALL'] },
     { name: 'Announcements', icon: Bell, path: '/announcements', roles: ['ALL'] },
+    { name: 'About System', icon: Info, path: '/about', roles: ['ALL'] },
     { name: 'Settings', icon: Settings, path: '/settings', roles: ['SUPER_ADMIN', 'PRINCIPAL'] },
   ];
 

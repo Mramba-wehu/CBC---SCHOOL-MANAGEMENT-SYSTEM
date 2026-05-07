@@ -14,6 +14,7 @@ import LessonPlanner from './pages/LessonPlanner';
 import ReportCardManager from './pages/ReportCardManager';
 import AdminPanel from './pages/AdminPanel';
 import ParentPortal from './pages/ParentPortal';
+import About from './pages/About';
 import Portal from './components/Portal';
 import Layout from './components/Layout';
 import OfflineAlert from './components/OfflineAlert';
@@ -43,6 +44,7 @@ function App() {
             <Route path="/billing" element={<BillingDashboard />} />
             <Route path="/admin" element={<AdminPanel />} />
             <Route path="/settings" element={<AdminPanel />} />
+            <Route path="/about" element={<About />} />
             {/* Add more routes as we progress */}
           </Route>
         </Routes>
