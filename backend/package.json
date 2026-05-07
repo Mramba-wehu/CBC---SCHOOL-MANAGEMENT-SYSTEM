@@ -1,0 +1,49 @@
+{
+  "name": "wehu-sms-backend",
+  "version": "1.0.0",
+  "description": "Wehu CBC School Management System - Backend API",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev",
+    "prisma:seed": "node prisma/seed.js",
+    "prisma:studio": "prisma studio",
+    "test": "jest --testEnvironment=node"
+  },
+  "keywords": [
+    "CBC",
+    "Kenya",
+    "school",
+    "management"
+  ],
+  "author": "Wehu",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "5.10.2",
+    "africastalking": "^0.8.0",
+    "bcryptjs": "^3.0.3",
+    "compression": "^1.8.1",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "ejs": "^5.0.2",
+    "express": "^4.18.2",
+    "express-rate-limit": "^8.5.1",
+    "express-validator": "^7.3.2",
+    "firebase-admin": "^13.9.0",
+    "helmet": "^8.1.0",
+    "jsonwebtoken": "^9.0.3",
+    "morgan": "^1.10.1",
+    "multer": "^2.1.1",
+    "nodemailer": "^8.0.7",
+    "prisma": "5.10.2",
+    "puppeteer": "^24.43.0",
+    "uuid": "^14.0.0"
+  },
+  "devDependencies": {
+    "jest": "^30.3.0",
+    "nodemon": "^3.1.14",
+    "supertest": "^7.2.2"
+  }
+}

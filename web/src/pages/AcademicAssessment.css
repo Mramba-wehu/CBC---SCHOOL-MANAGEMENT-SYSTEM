@@ -1,0 +1,95 @@
+.assessment-grid {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: var(--space-8);
+  height: calc(100vh - 200px);
+}
+
+.selection-panel {
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.student-items {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.student-btn {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius-md);
+  color: var(--text-muted);
+  font-size: 0.875rem;
+  width: 100%;
+  text-align: left;
+}
+
+.student-btn:hover {
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-main);
+}
+
+.student-btn.active {
+  background: var(--primary);
+  color: white;
+}
+
+.entry-panel {
+  overflow-y: auto;
+  padding-right: var(--space-4);
+}
+
+.empty-state {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: var(--space-12);
+}
+
+.outcome-row {
+  display: grid;
+  grid-template-columns: 1fr 240px;
+  gap: var(--space-6);
+  border-bottom: 1px solid var(--border);
+}
+
+.outcome-row:last-child {
+  border-bottom: none;
+}
+
+.outcome-rating {
+  display: flex;
+  gap: var(--space-2);
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.rating-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-md);
+  font-weight: 700;
+  font-size: 0.75rem;
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  transition: all 0.2s;
+}
+
+.rating-btn.EE:hover, .rating-btn.EE.selected { background: var(--success); color: white; border-color: var(--success); box-shadow: 0 0 10px rgba(16, 185, 129, 0.4); }
+.rating-btn.ME:hover, .rating-btn.ME.selected { background: var(--info); color: white; border-color: var(--info); box-shadow: 0 0 10px rgba(14, 165, 233, 0.4); }
+.rating-btn.AE:hover, .rating-btn.AE.selected { background: var(--warning); color: white; border-color: var(--warning); box-shadow: 0 0 10px rgba(245, 158, 11, 0.4); }
+.rating-btn.BE:hover, .rating-btn.BE.selected { background: var(--danger); color: white; border-color: var(--danger); box-shadow: 0 0 10px rgba(239, 68, 68, 0.4); }
+
+.user-avatar.large {
+  width: 60px;
+  height: 60px;
+  font-size: 1.5rem;
+}
